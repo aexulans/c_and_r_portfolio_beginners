@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.menu-container {
+    color: #fff;
+    background-color: #000000;  /* Blue */
+    padding: 20px 0;
+    display: flex; /* enables flexbox layout mode */
+    justify-content: center;
+}
+
+.menu {
+    border: 1px solid #fff;  /* For debugging */
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    border: 1px solid #ff0000;  /* For debugging */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login {
+    margin-left: 20px;
+}
+
+.header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social,
+.logo,
+.subscribe {
+    border: 1px solid #5995DA;
+}
+
+.social,
+.subscribe {
+    align-self: flex-end;
+    margin-bottom: 20px;
+}
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Die flexiblen Elemente können sich wenn nötig innerhalb des Containers in mehrere Zeilen aufteilen (nach unten). */
+    flex-direction: row;
+    align-items: center;
+}
+
+/*
+.first-item {
+    order: 1;
+}
+
+.last-item {
+    order: -1;
+}
+*/
+
+.photo-grid-item {
+    border: 1px solid #ff0000;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    /*flex: 1;*/
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    border: 1px solid #000000;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+}
+
+.footer-one,
+.footer-three {
+    background-color: #5995DA;
+    flex: initial; /* size remains fixed */
+    width: 200px;
+}
+
+.signup {
+    margin-left: auto;
+}
+
+/*
+    Use display: flex; to create a flex container.
+    Use justify-content to define the horizontal alignment of items.
+    Use align-items to define the vertical alignment of items.
+    Use flex-direction if you need columns instead of rows.
+    Use the row-reverse or column-reverse values to flip item order.
+    Use order to customize the order of individual elements.
+    Use align-self to vertically align individual items.
+    Use flex to create flexible boxes that can stretch and shrink.
+*/

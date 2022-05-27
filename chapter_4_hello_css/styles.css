@@ -1,0 +1,36 @@
+body {
+    color: #414141; /* dark gray */
+    background-color: #EEEEEE; /* light gray */
+    font-size: 18px;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Helvetica", "Arial", sans-serif; /* font = Helvetica, but if the user does not have installed it, font = Arial. If the user has not installed even Arial, use the systems default sans serif font*/
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 2em; /* font size relative to font size in body {...} */
+}
+
+h2 {
+    font-size: 1.6em
+}
+
+h3 {
+    font-size: 1.3em
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+a { /* links */
+    text-decoration: underline;
+
+}

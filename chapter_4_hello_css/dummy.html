@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dummy</title>
+    <link rel='stylesheet' href='styles.css'/>
+    <!-- here i can add more stylesheets, while the latter will override the former -->
+    <style>
+        /* this overrides some styles from styles.css, but is mostly bad practice */
+        body {
+            color: #0000FF; /* blue */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Dummy</h1>
+
+<p>This is a dummy page that helps us demonstrate reusable CSS
+    stylesheets. <a href='hello-css.html'>Go back</a>.</p>
+
+<p>Want to try crossing out an <a href='nowhere.html' style='color: #990000; text-decoration: line-through;'>obsolete link</a>? This
+    is your chance!</p>
+</body>
+</html>
+
+<!-- You’ll almost always have at least one stylesheet that’s applied to the entire site.
+It’s usually a good idea to use root-relative paths when linking global stylesheets to
+avoid problems in nested pages. For example, some-folder/page.html would need to use
+../styles.css to reference our styles.css file, and this can get real confusing real quick. -->
+
+<!--  <ins> ? -->
+<!--  <del> ? -->
